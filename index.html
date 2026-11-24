@@ -173,7 +173,6 @@
             100% { transform: translateY(-140px) scale(1.3) rotate(360deg); opacity: 0; }
         }
 
-        /* تحسين العرض الأفقي (Landscape) والشاشات القصيرة ارتفاعاً */
         @media (max-height: 560px) and (orientation: landscape) {
             body {
                 padding-top: 0.75rem;
@@ -206,7 +205,7 @@
                     <div class="text-center sm:text-right space-y-2.5 flex-1 w-full">
                         <div class="inline-flex items-center gap-2 bg-amber-300 text-indigo-950 font-extrabold px-4 py-1.5 rounded-full border-2 border-indigo-950 shadow-[3px_3px_0px_#1e1b4b] text-xs sm:text-sm">
                             <span>🌟</span>
-                            <span>برنامج تعزيز السلوك الإيجابي</span>
+                            <span>برنامج تعزيز السلوك الإيجابي • خاص بالطالبات</span>
                         </div>
 
                         <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white drop-shadow-[3px_3px_0px_#1e1b4b]">
@@ -214,7 +213,7 @@
                         </h1>
 
                         <p class="text-sm sm:text-base font-bold text-sky-50 max-w-2xl mx-auto sm:mx-0 leading-relaxed">
-                            رحلة تفاعلية ممتعة بأسلوب المانجا لنتعلم معاً معنى الاعتدال والتوازن في أقوالنا وأفعالنا!
+                            عرض تفاعلي بأسلوب المانجا يوضح معنى الاعتدال والتوازن وركائز الوسطية وتطبيقاتها، متبوع بأسئلة وخيارات للطالبات.
                         </p>
 
                         <!-- بطاقة اسم الطالبة عالية + زر الصوت -->
@@ -222,7 +221,7 @@
                             <div class="bg-white text-indigo-950 px-4 py-1.5 rounded-xl border-2 border-indigo-950 shadow-[3px_3px_0px_#1e1b4b] font-extrabold text-sm sm:text-base flex items-center gap-2">
                                 <span class="text-pink-500">👩‍🎓</span>
                                 <span>إعداد الطالبة:</span>
-                                <span class="bg-pink-100 text-pink-700 px-2.5 py-0.5 rounded-lg border border-pink-300">عالية</span>
+                                <span class="bg-pink-100 text-pink-700 px-2.5 py-0.5 rounded-lg border border-pink-300 font-black">عالية</span>
                             </div>
 
                             <button id="soundToggleBtn" onclick="toggleSound()" class="anime-btn bg-amber-300 text-indigo-950 px-3.5 py-1.5 rounded-xl font-extrabold text-xs sm:text-sm flex items-center gap-1.5" title="تشغيل أو إيقاف المؤثرات الصوتية">
@@ -263,46 +262,46 @@
             </header>
 
             <!-- ========================================================= -->
-            <!-- أزرار التنقل بين (مرايا وقصة الوسطية) و (التحدي التفاعلي) -->
+            <!-- أزرار التنقل بين الشرح والأسئلة التفاعلية -->
             <!-- ========================================================= -->
             <nav class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5">
                 <button id="tabStoryBtn" onclick="switchView('story')" class="anime-btn bg-amber-300 text-indigo-950 py-3.5 px-4 rounded-2xl font-black text-base sm:text-xl flex items-center justify-center gap-2">
                     <span>📖</span>
-                    <span>مرايا: ما هي الوسطية؟</span>
+                    <span>شرح قيمة الوسطية</span>
                 </button>
                 <button id="tabQuizBtn" onclick="switchView('quiz')" class="anime-btn bg-white text-indigo-950 py-3.5 px-4 rounded-2xl font-black text-base sm:text-xl flex items-center justify-center gap-2">
                     <span>🎯</span>
-                    <span>تحدي الأسئلة التفاعلي</span>
+                    <span>الأسئلة والخيارات</span>
                 </button>
             </nav>
 
             <!-- ========================================================= -->
-            <!-- 2. القسم الأول: مرايا - لوحات مانجا تشرح قيمة الوسطية -->
+            <!-- 2. القسم الأول: شرح قيمة الوسطية (بنصوص أوراق الشرح) -->
             <!-- ========================================================= -->
             <main id="storySection" class="space-y-6">
 
-                <!-- فقاعة ترحيب الطالبة عالية -->
+                <!-- فقاعة ترحيب الطالبة عالية ومقدمة للطالبات -->
                 <div class="speech-bubble p-4 sm:p-5 bg-amber-50">
                     <div class="flex items-start gap-3">
                         <span class="text-2xl sm:text-3xl flex-shrink-0">💬</span>
                         <div>
-                            <span class="font-black text-indigo-900 text-sm sm:text-base">تقول عالية:</span>
+                            <span class="font-black text-indigo-900 text-sm sm:text-base">تقول الطالبة عالية:</span>
                             <p class="font-bold text-slate-800 text-sm sm:text-base mt-0.5 leading-relaxed">
-                                أهلاً بكم أصدقائي الطلاب! في <span class="text-sky-600 font-black">برنامج تعزيز السلوك الإيجابي</span>، سنتعرف معاً على كنز عظيم يجعل حياتنا أجمل وأكثر هدوءاً، وهو <span class="bg-amber-200 px-2 py-0.5 rounded-md border border-indigo-950 font-black">قيمة الوسطية</span>. اقرأوا المشاهد التالية ثم اختبروا معلوماتكم!
+                                أهلاً بكُنّ عزيزاتي الطالبات في <span class="text-sky-700 font-black">برنامج تعزيز السلوك الإيجابي</span>! أشارككنّ هنا شرح <span class="bg-amber-200 px-2 py-0.5 rounded-md border border-indigo-950 font-black">قيمة الوسطية</span> وركائزها وتطبيقاتها، ثم ننتقل معاً إلى الأسئلة والخيارات.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- شبكة لوحات المانجا المرتبة -->
+                <!-- شبكة بطاقات الشرح المرتبة -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
 
-                    <!-- اللوحة 1: ما هي الوسطية؟ -->
+                    <!-- البطاقة 1: ما هي الوسطية؟ -->
                     <article class="manga-panel p-5 bg-gradient-to-br from-white to-sky-50 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-3">
                                 <span class="manga-tag px-3 py-1 rounded-lg font-black text-xs sm:text-sm text-indigo-950">
-                                    المشهد ١ • المفهوم
+                                    ١ • ما هي الوسطية؟
                                 </span>
                                 <span class="text-2xl">⚖️</span>
                             </div>
@@ -310,30 +309,30 @@
                                 ما هي الوسطية؟
                             </h2>
                             <p class="font-bold text-slate-700 text-sm sm:text-base leading-relaxed">
-                                الوسطية هي <span class="text-sky-700 font-black">المنهج القائم على الاعتدال والتوازن</span>، وهي الوقوف في نقطة العدل تماماً بين طرفين مرفوضين:
+                                الوسطية هي المنهج القائم على الاعتدال والتوازن، وهي الوقوف في نقطة العدل بين طرفي الإفراط (الغلو والتشدد) والتفريط (التقصير).
                             </p>
                             <div class="mt-4 bg-white border-2 border-indigo-950 rounded-xl p-3 shadow-[3px_3px_0px_#1e1b4b]">
-                                <div class="grid grid-cols-3 text-xs sm:text-sm font-black text-center gap-2 items-center">
-                                    <div class="bg-rose-100 text-rose-800 py-2 px-1.5 rounded-lg border border-rose-400">
-                                        ❌ الإفراط<br><span class="text-[11px] font-bold">(الغلو والتشدد)</span>
-                                    </div>
-                                    <div class="bg-emerald-300 text-indigo-950 py-2.5 px-1.5 rounded-lg border-2 border-indigo-950 shadow-sm">
-                                        ✅ الوسطية<br><span class="text-[11px] font-extrabold">(العدل والتوازن)</span>
-                                    </div>
-                                    <div class="bg-amber-100 text-amber-800 py-2 px-1.5 rounded-lg border border-amber-400">
-                                        ❌ التفريط<br><span class="text-[11px] font-bold">(التقصير والتهاون)</span>
-                                    </div>
-                                </div>
+                                <ul class="grid grid-cols-3 text-xs sm:text-sm font-black text-center gap-2 items-center list-none p-0 m-0">
+                                    <li class="bg-rose-100 text-rose-800 py-2 px-1.5 rounded-lg border border-rose-400">
+                                        الإفراط<br><span class="text-[11px] font-bold">(الغلو والتشدد)</span>
+                                    </li>
+                                    <li class="bg-emerald-300 text-indigo-950 py-2.5 px-1.5 rounded-lg border-2 border-indigo-950 shadow-sm">
+                                        الوسطية<br><span class="text-[11px] font-extrabold">(نقطة العدل)</span>
+                                    </li>
+                                    <li class="bg-amber-100 text-amber-800 py-2 px-1.5 rounded-lg border border-amber-400">
+                                        التفريط<br><span class="text-[11px] font-bold">(التقصير)</span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </article>
 
-                    <!-- اللوحة 2: ركائز المنهج الوسطي -->
+                    <!-- البطاقة 2: ركائز المنهج الوسطي -->
                     <article class="manga-panel p-5 bg-gradient-to-br from-white to-emerald-50 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-3">
                                 <span class="manga-tag bg-emerald-300 px-3 py-1 rounded-lg font-black text-xs sm:text-sm text-indigo-950">
-                                    المشهد ٢ • الركائز
+                                    ٢ • ركائز المنهج الوسطي
                                 </span>
                                 <span class="text-2xl">🏛️</span>
                             </div>
@@ -341,76 +340,68 @@
                                 ركائز المنهج الوسطي
                             </h2>
                             <ul class="space-y-2.5 text-sm sm:text-base font-bold text-slate-700 list-none p-0 m-0">
-                                <li class="flex items-start gap-2.5 bg-white p-2.5 rounded-xl border-2 border-indigo-950">
-                                    <span class="text-emerald-600 font-black text-lg flex-shrink-0">💡</span>
-                                    <div>
-                                        <span class="font-black text-indigo-950">الاعتدال في الفكر:</span> تقبل الاختلاف، ونبذ التعصب، وتحكيم العقل والمنطق.
-                                    </div>
+                                <li class="bg-white p-3 rounded-xl border-2 border-indigo-950">
+                                    <span class="font-black text-indigo-950 block mb-0.5">• الاعتدال في الفكر:</span>
+                                    تقبل الاختلاف، ونبذ التعصب، وتحكيم العقل والمنطق في فهم النصوص والواقع.
                                 </li>
-                                <li class="flex items-start gap-2.5 bg-white p-2.5 rounded-xl border-2 border-indigo-950">
-                                    <span class="text-sky-600 font-black text-lg flex-shrink-0">🤝</span>
-                                    <div>
-                                        <span class="font-black text-indigo-950">التوازن في العمل:</span> إعطاء كل ذي حق حقه، والتوازن بين العبادة والعمل ومصلحة الفرد والجماعة.
-                                    </div>
+                                <li class="bg-white p-3 rounded-xl border-2 border-indigo-950">
+                                    <span class="font-black text-sky-800 block mb-0.5">• التوازن في العمل:</span>
+                                    إعطاء كل ذي حق حقه؛ فلا يطغى جانب العبادة على العمل، ولا مصلحة الفرد على مصلحة الجماعة.
                                 </li>
                             </ul>
                         </div>
                     </article>
 
-                    <!-- اللوحة 3: كيف نطبق الوسطية في حياتنا؟ -->
+                    <!-- البطاقة 3: كيف نطبقها؟ -->
                     <article class="manga-panel p-5 bg-gradient-to-br from-white to-amber-50 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-3">
                                 <span class="manga-tag bg-pink-300 px-3 py-1 rounded-lg font-black text-xs sm:text-sm text-indigo-950">
-                                    المشهد ٣ • التطبيق
+                                    ٣ • كيف نطبقها؟
                                 </span>
-                                <span class="text-2xl">🚀</span>
+                                <span class="text-2xl">✨</span>
                             </div>
                             <h2 class="text-xl sm:text-2xl font-black text-indigo-950 mb-3">
-                                كيف نطبق الوسطية في حياتنا؟
+                                كيف نطبقها؟
                             </h2>
-                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm font-bold list-none p-0 m-0">
+                            <ul class="space-y-2 text-xs sm:text-sm font-bold text-slate-800 list-none p-0 m-0">
                                 <li class="bg-white p-2.5 rounded-xl border-2 border-indigo-950 shadow-[2px_2px_0px_#1e1b4b]">
-                                    <span class="font-black text-indigo-900 block mb-0.5">🧠 فكّر قبل أن تحكم:</span>
-                                    لا تتبنى الآراء الحدية فوراً.
+                                    <span class="font-black text-indigo-950">• فكّر قبل أن تحكم:</span> لا تتبنى الآراء الحدية فوراً.
                                 </li>
                                 <li class="bg-white p-2.5 rounded-xl border-2 border-indigo-950 shadow-[2px_2px_0px_#1e1b4b]">
-                                    <span class="font-black text-emerald-700 block mb-0.5">🕊️ كن متسامحاً:</span>
-                                    ابحث عن نقاط الالتقاء مع الآخرين.
+                                    <span class="font-black text-emerald-700">• كن متسامحاً:</span> ابحث عن نقاط الالتقاء مع الآخرين بدلاً من نقاط الاختلاف.
                                 </li>
                                 <li class="bg-white p-2.5 rounded-xl border-2 border-indigo-950 shadow-[2px_2px_0px_#1e1b4b]">
-                                    <span class="font-black text-amber-700 block mb-0.5">🛑 تجنب الاندفاع:</span>
-                                    اجعل قراراتك مبنية على الحكمة والتروي.
+                                    <span class="font-black text-amber-700">• تجنب الاندفاع:</span> اجعل قراراتك مبنية على الحكمة والتروي.
                                 </li>
                                 <li class="bg-white p-2.5 rounded-xl border-2 border-indigo-950 shadow-[2px_2px_0px_#1e1b4b]">
-                                    <span class="font-black text-sky-700 block mb-0.5">🌸 اليسر والسماحة:</span>
-                                    اختر الأيسر في التعاملات بما لا يخالف الثوابت.
+                                    <span class="font-black text-sky-700">• اليسر والسماحة:</span> اختيار الأيسر في التعاملات الإنسانية والاجتماعية بما لا يخالف الثوابت.
                                 </li>
                             </ul>
                         </div>
                     </article>
 
-                    <!-- اللوحة 4: خلاصة القول -->
+                    <!-- البطاقة 4: خلاصة القول -->
                     <article class="manga-panel p-5 manga-burst-bg flex flex-col justify-between">
                         <div class="bg-white/95 p-4 rounded-2xl border-2 border-indigo-950 h-full flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-2">
                                     <span class="manga-tag bg-sky-300 px-3 py-1 rounded-lg font-black text-xs sm:text-sm text-indigo-950">
-                                        المشهد ٤ • خلاصة القول
+                                        ٤ • خلاصة القول
                                     </span>
                                     <span class="text-2xl">🛡️</span>
                                 </div>
                                 <h2 class="text-xl sm:text-2xl font-black text-indigo-950 mb-2">
-                                    صمام الأمان للمجتمع!
+                                    خلاصة القول:
                                 </h2>
                                 <p class="font-extrabold text-slate-800 text-sm sm:text-base leading-relaxed">
-                                    «الوسطية هي صمام الأمان للفرد والمجتمع، وهي الطريق نحو مستقبل مستقر ومزدهر يسوده الاحترام والتعاون والحكمة.»
+                                    الوسطية هي صمام الأمان للفرد والمجتمع، وهي الطريق نحو مستقبل مستقر ومزدهر.
                                 </p>
                             </div>
 
                             <button onclick="switchView('quiz')" class="anime-btn mt-4 w-full bg-emerald-400 hover:bg-emerald-300 text-indigo-950 font-black py-3 px-4 rounded-xl text-base sm:text-lg flex items-center justify-center gap-2">
                                 <span>⚡</span>
-                                <span>مستعد؟ ابدأ تحدي الأسئلة الآن!</span>
+                                <span>الانتقال إلى الأسئلة والخيارات</span>
                             </button>
                         </div>
                     </article>
@@ -419,7 +410,7 @@
             </main>
 
             <!-- ========================================================= -->
-            <!-- 3. القسم الثاني: التحدي التفاعلي (أسئلة الاختيارات + صح وخطأ) -->
+            <!-- 3. القسم الثاني: الأسئلة والخيارات للطالبات -->
             <!-- ========================================================= -->
             <section id="quizSection" class="hidden space-y-6">
 
@@ -428,7 +419,7 @@
                     <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
                         <div class="flex flex-wrap items-center gap-2">
                             <span class="bg-indigo-950 text-white px-3 py-1 rounded-lg font-black text-xs sm:text-sm" id="questionTypeBadge">
-                                اختيار من متعدد
+                                أسئلة وخيارات عن الوسطية
                             </span>
                             <span class="font-black text-indigo-950 text-sm sm:text-base" id="progressText">
                                 السؤال 1 من 11
@@ -444,20 +435,19 @@
                     </div>
                 </div>
 
-                <!-- بطاقة السؤال التفاعلية المرتبة -->
+                <!-- بطاقة السؤال المرتبة مع صورة الفتاة واسم الطالبة عالية -->
                 <div id="quizCard" class="manga-panel p-4 sm:p-8 bg-white">
                     <div class="flex flex-col sm:flex-row items-center gap-4 mb-6 pb-4 border-b-2 border-dashed border-slate-200">
-                        <!-- شخصية التفاعل المصغرة -->
                         <div id="chibiReactionBox" class="w-20 h-20 sm:w-24 sm:h-24 flex-shrink-0 rounded-2xl border-3 border-indigo-950 bg-sky-100 flex items-center justify-center text-4xl sm:text-5xl shadow-[3px_3px_0px_#1e1b4b]">
                             🤔
                         </div>
-                        <div class="text-center sm:text-right flex-1 space-y-1">
+                        <div class="text-center sm:text-right flex-1 space-y-1.5">
                             <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                                 <span class="text-xs sm:text-sm font-black text-sky-700 bg-sky-50 px-2.5 py-0.5 rounded-lg border border-sky-200">
-                                    اختر الإجابة الصحيحة:
+                                    عزيزتي الطالبة، اختاري الإجابة الصحيحة:
                                 </span>
                                 <span class="text-xs font-extrabold text-pink-700 bg-pink-50 px-2.5 py-0.5 rounded-lg border border-pink-200">
-                                    تحدي الطالبة عالية
+                                    إعداد الطالبة: عالية
                                 </span>
                             </div>
                             <h2 id="questionText" class="text-xl sm:text-2xl md:text-3xl font-black text-indigo-950 leading-snug">
@@ -466,10 +456,10 @@
                         </div>
                     </div>
 
-                    <!-- قائمة الخيارات المرتبة أسفل السؤال -->
+                    <!-- قائمة الخيارات المرتبة تحت السؤال -->
                     <ol id="optionsContainer" class="space-y-3 list-none p-0 m-0"></ol>
 
-                    <!-- رسالة التغذية الراجعة الفورية بأسلوب المانجا -->
+                    <!-- رسالة التغذية الراجعة الفورية -->
                     <div id="feedbackBox" class="hidden mt-6 p-4 rounded-2xl border-3 border-indigo-950 shadow-[4px_4px_0px_#1e1b4b] pop-in">
                         <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
                             <div class="flex items-center gap-3 text-center sm:text-right">
@@ -486,38 +476,38 @@
                     </div>
                 </div>
 
-                <!-- شاشة النتيجة النهائية الاحتفالية -->
+                <!-- شاشة النتيجة النهائية الخاصة بالطالبات -->
                 <div id="resultCard" class="hidden manga-panel p-5 sm:p-10 manga-burst-bg text-center pop-in">
                     <div class="bg-white/95 border-3 border-indigo-950 rounded-3xl p-5 sm:p-8 shadow-[6px_6px_0px_#1e1b4b] max-w-2xl mx-auto space-y-5">
                         <div class="inline-block bg-amber-300 border-3 border-indigo-950 px-5 py-1.5 rounded-full font-black text-sm sm:text-base shadow-[3px_3px_0px_#1e1b4b]">
-                            🏆 وسام سفير الوسطية والاعتدال
+                            🏆 وسام الوسطية والاعتدال للطالبات
                         </div>
 
                         <div class="text-6xl sm:text-7xl chibi-float">🎉</div>
 
                         <h2 class="text-2xl sm:text-4xl font-black text-indigo-950">
-                            أحسنت يا بطل! أنهيت التحدي بنجاح
+                            أحسنتِ عزيزتي الطالبة! أنهيتِ الأسئلة بنجاح
                         </h2>
 
                         <div class="bg-sky-50 border-3 border-indigo-950 rounded-2xl p-4 inline-block px-8 shadow-[4px_4px_0px_#1e1b4b]">
-                            <p class="text-sm font-bold text-slate-600">نتيجتك النهائية</p>
+                            <p class="text-sm font-bold text-slate-600">نتيجتكِ النهائية</p>
                             <p class="text-4xl sm:text-5xl font-black text-emerald-600 mt-1">
                                 <span id="finalScore">11</span> <span class="text-2xl text-indigo-950">/ 11</span>
                             </p>
                         </div>
 
                         <p id="finalMessage" class="font-bold text-slate-700 text-base sm:text-lg leading-relaxed">
-                            رائع جداً! لقد أثبتّ فهمك العميق لقيمة الوسطية والاعتدال والتوازن في الأقوال والأفعال.
+                            رائع جداً! لقد أظهرتِ فهماً واضحاً لقيمة الوسطية والاعتدال والتوازن.
                         </p>
 
                         <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                             <button onclick="restartQuiz()" class="anime-btn bg-emerald-400 text-indigo-950 px-6 py-3 rounded-2xl font-black text-base sm:text-lg flex items-center justify-center gap-2 w-full sm:w-auto">
                                 <span>🔄</span>
-                                <span>إعادة التحدي مرة أخرى</span>
+                                <span>إعادة الأسئلة مرة أخرى</span>
                             </button>
                             <button onclick="switchView('story')" class="anime-btn bg-amber-300 text-indigo-950 px-6 py-3 rounded-2xl font-black text-base sm:text-lg flex items-center justify-center gap-2 w-full sm:w-auto">
                                 <span>📖</span>
-                                <span>العودة لمشاهد المانجا</span>
+                                <span>العودة إلى الشرح</span>
                             </button>
                         </div>
 
@@ -540,120 +530,123 @@
 
     <script>
         const quizQuestions = [
+            // أسئلة وخيارات عن الوسطية (1 - 5)
             {
-                type: "اختيار من متعدد",
-                question: "١) ما المقصود بالوسطية؟",
+                type: "أسئلة وخيارات عن الوسطية",
+                question: "١) ما المقصود بالوسطية ؟",
                 options: [
                     { label: "أ", text: "التشدد في كل الأمور" },
                     { label: "ب", text: "التفريط والتهاون" },
                     { label: "ج", text: "الاعتدال والتوازن في الأقوال والأفعال" }
                 ],
                 correctIndex: 2,
-                explanation: "الوسطية هي الاعتدال والتوازن في الأقوال والأفعال دون إفراط أو تفريط."
+                explanation: "الإجابة الصحيحة (ج): الوسطية هي الاعتدال والتوازن في الأقوال والأفعال."
             },
             {
-                type: "اختيار من متعدد",
-                question: "٢) من صفات الوسطية:",
+                type: "أسئلة وخيارات عن الوسطية",
+                question: "٢) من صفات الوسطية :",
                 options: [
                     { label: "أ", text: "الغلو والمبالغة" },
                     { label: "ب", text: "العدل والاعتدال" },
                     { label: "ج", text: "التعصب للرأي" }
                 ],
                 correctIndex: 1,
-                explanation: "العدل والاعتدال هما جوهر الوسطية، بينما الغلو والتعصب يخالفانها."
+                explanation: "الإجابة الصحيحة (ب): العدل والاعتدال من صفات الوسطية."
             },
             {
-                type: "اختيار من متعدد",
-                question: "٣) الوسطية في الدين تعني:",
+                type: "أسئلة وخيارات عن الوسطية",
+                question: "٣) الوسطية في الدين تعني :",
                 options: [
                     { label: "أ", text: "ترك العبادات" },
                     { label: "ب", text: "التشدد الزائد" },
                     { label: "ج", text: "الالتزام بالدين بدون إفراط ولا تفريط" }
                 ],
                 correctIndex: 2,
-                explanation: "ديننا دين الوسطية: التزام سمح ومعتدل بدون إفراط ولا تفريط."
+                explanation: "الإجابة الصحيحة (ج): الالتزام بالدين بدون إفراط ولا تفريط."
             },
             {
-                type: "اختيار من متعدد",
-                question: "٤) أي سلوك يدل على الوسطية؟",
+                type: "أسئلة وخيارات عن الوسطية",
+                question: "٤) أي سلوك يدل على الوسطية ؟",
                 options: [
                     { label: "أ", text: "رفض رأي الآخرين دائماً" },
                     { label: "ب", text: "قبول النصيحة واحترام الآراء المختلفة" },
                     { label: "ج", text: "فرض الرأي بالقوة" }
                 ],
                 correctIndex: 1,
-                explanation: "الإنسان الوسطي يحترم الآراء المختلفة ويتقبل النصيحة بصدر رحب."
+                explanation: "الإجابة الصحيحة (ب): قبول النصيحة واحترام الآراء المختلفة."
             },
             {
-                type: "اختيار من متعدد",
-                question: "٥) أي مما يلي مخالف للوسطية؟",
+                type: "أسئلة وخيارات عن الوسطية",
+                question: "٥) أي مما يلي مخالف للوسطية ؟",
                 options: [
                     { label: "أ", text: "الاعتدال في الإنفاق" },
                     { label: "ب", text: "التعاون مع الآخرين" },
                     { label: "ج", text: "الغلو والتشدد" }
                 ],
                 correctIndex: 2,
-                explanation: "الغلو والتشدد من صور الإفراط التي تخالف منهج الوسطية."
+                explanation: "الإجابة الصحيحة (ج): الغلو والتشدد مخالف للوسطية."
             },
+
+            // صح أو خطأ عن الوسطية (6 - 11)
             {
-                type: "صح أم خطأ",
+                type: "صح أو خطأ",
                 question: "٦) الوسطية تعني الاعتدال وعدم المبالغة.",
                 options: [
                     { label: "✔️", text: "صح" },
                     { label: "❌", text: "خطأ" }
                 ],
                 correctIndex: 0,
-                explanation: "عبارة صحيحة! الوسطية تقوم على الاعتدال والبعد عن المبالغة."
+                explanation: "عبارة صحيحة! الوسطية تعني الاعتدال وعدم المبالغة."
             },
             {
-                type: "صح أم خطأ",
+                type: "صح أو خطأ",
                 question: "٧) الوسطية تعني التنازل عن المبادئ دائماً.",
                 options: [
                     { label: "✔️", text: "صح" },
                     { label: "❌", text: "خطأ" }
                 ],
                 correctIndex: 1,
-                explanation: "عبارة خاطئة! الوسطية تعني التمسك بالثوابت والمبادئ مع اليسر والسماحة."
+                explanation: "عبارة خاطئة! الوسطية لا تعني التنازل عن المبادئ والثوابت."
             },
             {
-                type: "صح أم خطأ",
+                type: "صح أو خطأ",
                 question: "٨) الإنسان الوسطي يحترم رأي الآخرين حتى لو اختلف معهم.",
                 options: [
                     { label: "✔️", text: "صح" },
                     { label: "❌", text: "خطأ" }
                 ],
                 correctIndex: 0,
-                explanation: "عبارة صحيحة! تقبل الاختلاف واحترام الآخرين من أهم ركائز الفكر الوسطي."
+                explanation: "عبارة صحيحة! احترام رأي الآخرين وتقبل الاختلاف من صفات الوسطية."
             },
             {
-                type: "صح أم خطأ",
+                type: "صح أو خطأ",
                 question: "٩) الوسطية هي الوقوف في المنتصف بلا رأي.",
                 options: [
                     { label: "✔️", text: "صح" },
                     { label: "❌", text: "خطأ" }
                 ],
                 correctIndex: 1,
-                explanation: "عبارة خاطئة! الوسطية موقف واعٍ قائم على العدل والحكمة وليست سلبية أو انعدام رأي."
+                explanation: "عبارة خاطئة! الوسطية موقف واعٍ وتوازن وليست انعدام رأي."
             },
             {
-                type: "صح أم خطأ",
+                type: "صح أو خطأ",
                 question: "١٠) الوسطية تساعد على التوازن في الحياة واتخاذ قرارات صحيحة.",
                 options: [
                     { label: "✔️", text: "صح" },
                     { label: "❌", text: "خطأ" }
                 ],
                 correctIndex: 0,
-                explanation: "عبارة صحيحة! التروي وتجنب الاندفاع يقودان إلى قرارات حكيمة ومتوازنة."
+                explanation: "عبارة صحيحة! الوسطية تساعد على التوازن واتخاذ قرارات صحيحة."
             },
             {
-                type: "صح أم خطأ",
+                type: "صح أو خطأ",
                 question: "١١) من صفات الوسطيّة الحكمة والهدوء.",
                 options: [
                     { label: "✔️", text: "صح" },
                     { label: "❌", text: "خطأ" }
                 ],
                 correctIndex: 0,
-                explanation: "عبارة صحيحة! الحكمة والهدوء والتروي من أجمل ثمار الوسطية."
+                explanation: "عبارة صحيحة! من صفات الوسطية الحكمة والهدوء."
             }
         ];
 
@@ -751,7 +744,7 @@
                 btn.className = 'anime-btn w-full bg-slate-50 hover:bg-sky-50 text-indigo-950 p-3.5 sm:p-4 rounded-2xl font-extrabold text-base sm:text-xl flex items-center gap-3.5 text-right';
                 btn.onclick = () => selectAnswer(idx, btn);
 
-                const badgeBg = q.type === 'صح أم خطأ' ? 'bg-amber-200' : 'bg-sky-200';
+                const badgeBg = q.type === 'صح أو خطأ' ? 'bg-amber-200' : 'bg-sky-200';
                 btn.innerHTML = `
                     <span class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl ${badgeBg} border-2 border-indigo-950 flex items-center justify-center font-black text-lg flex-shrink-0 shadow-[2px_2px_0px_#1e1b4b]">
                         ${opt.label}
@@ -801,7 +794,7 @@
 
                 feedbackBox.className = 'mt-6 p-4 rounded-2xl border-3 border-indigo-950 shadow-[4px_4px_0px_#1e1b4b] pop-in bg-emerald-100 text-indigo-950';
                 feedbackEmoji.textContent = '🌟';
-                feedbackTitle.textContent = 'أحسنت! إجابة رائعة وصحيحة ✨';
+                feedbackTitle.textContent = 'أحسنتِ! إجابة صحيحة ✨';
                 feedbackSub.textContent = q.explanation;
             } else {
                 playSound('wrong');
@@ -811,7 +804,7 @@
 
                 feedbackBox.className = 'mt-6 p-4 rounded-2xl border-3 border-indigo-950 shadow-[4px_4px_0px_#1e1b4b] pop-in bg-rose-100 text-indigo-950';
                 feedbackEmoji.textContent = '💡';
-                feedbackTitle.textContent = 'حاول الانتباه في المرة القادمة!';
+                feedbackTitle.textContent = 'حاولي التركيز في السؤال التالي!';
                 feedbackSub.textContent = q.explanation;
             }
 
@@ -843,14 +836,14 @@
             const finalMessage = document.getElementById('finalMessage');
 
             if (score === quizQuestions.length) {
-                finalMessage.textContent = 'مذهل! حصلت على العلامة الكاملة! أنت قدوة رائعة في الاعتدال والتوازن والوسطية.';
+                finalMessage.textContent = 'مذهل! حصلتِ على العلامة الكاملة! أنتِ قدوة رائعة في الاعتدال والتوازن والوسطية.';
                 playSound('correct');
                 spawnConfetti(resultCard);
             } else if (score >= 8) {
-                finalMessage.textContent = 'ممتاز جداً! لديك فهم رائع لقيمة الوسطية وتطبيقها في حياتك اليومية.';
+                finalMessage.textContent = 'ممتاز جداً! لديكِ فهم رائع لقيمة الوسطية وتطبيقها في الحياة اليومية.';
                 playSound('correct');
             } else {
-                finalMessage.textContent = 'مشاركة جميلة! يمكنك مراجعة لوحات المانجا وإعادة التحدي لتحقيق العلامة الكاملة.';
+                finalMessage.textContent = 'مشاركة جميلة! يمكنكِ مراجعة الشرح وإعادة الأسئلة لتحقيق العلامة الكاملة.';
             }
         }
 
